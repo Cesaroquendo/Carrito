@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    background-color: rgb(9, 9, 56);
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.navlink{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+    
+}
+
+.btn-cart{
+    background: none;
+    border: none;
+    padding: 5px;
+    margin: 20px 0;
+    outline: none;
+}
+
+.fa-shopping-cart{
+    color: white;
+    font-size: 25px;
+}
+
+.productos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.ejemplo{
+    width: 350px;
+    height: 450px;
+    margin: 30px 50px;
+    padding: 30px 50px;
+    border: 1px solid gray;
+    border-radius: 5%;
+}
+
+.imagen{
+    width: 250px;
+    height: 250px;
+}
+
+.precio, .descripcion{
+    width: 200px;
+    margin: 10px 25px 10px 25px;
+}
+
+.agregar_carrito{
+    width: 200px;
+    margin: 20px 25px;
+    font-size: 15px;
+    padding: 5px;
+    outline: none;
+    border-color: #007bff;
+    background-color: #007bff;
+    color: white;
+    transition: .15s;
+}
+
+.agregar_carrito:hover{
+    border-color: #0044ff;
+    background-color: #0044ff;
+}
+
+@media (max-width: 575.98px) {
+    .ejemplo{
+        width: 250px;
+        height: 350px;
+        margin: 30px 50px;
+        padding: 30px 50px;
+    }
+
+    .imagen{        
+        width: 150px;
+        height: 150px;
+        background-color: lightblue;
+    }
+
+    .precio, .descripcion{
+        width: 150px;
+        margin: 10px 0 5px 0;
+    }
+
+    .agregar_carrito{
+        width: 150px;
+        font-size: 15px;
+        padding: 5px;
+        margin: 10px 0;
+    }
+}
+
+
+.modal-contenido{
+  background-color: #f7f7f7;
+  width:750px;
+  padding: 10px 20px;
+  margin: 5% auto;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.modal{
+  background-color: rgba(0,0,0,.8);
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:0;
+  pointer-events:none;
+  transition: all 1.5s;
+}
+
+#miModal:target{
+  opacity:1;
+  pointer-events:auto;
+}
+
+.closemodal{
+    color: #292b2c;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.tablemodal{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.thmodal{
+    border: 1px solid black;
+    width: 150px;
+    padding: 10px;
+}

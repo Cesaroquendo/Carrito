@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/087b66f761.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <a class="navlink"> Carrito de Compras </a>
+        <button class="btn-cart">
+            <a class="navlink" href="#miModal">
+                <i id="cart" class="fas fa-shopping-cart"></i>
+            </a>
+        </button>
+
+        <div id="miModal" class="modal">
+            <div id="modal-contenido" class="modal-contenido">
+                <a href="#" class="closemodal"> x </a>
+                <h2> Articulos en el Carrito </h2>
+
+                <table class="tablemodal">
+                    <thead>
+                        <th class="thmodal">Producto</th>
+                        <th class="thmodal">Descripcion</th>
+                        <th class="thmodal">Cantidad</th>
+                        <th class="thmodal">Precio</th>
+                        <th class="thmodal">Opciones</th>
+                    </thead>
+                    <tbody class="tbodymodal">
+
+                    </tbody>
+                </table>
+
+                <a id="vaciar-carrito" href="#"> Vaciar Carrito </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="productos" id="lista-productos">
+
+        <div class="ejemplo">
+            <img class="imagen" src="./img/intel_i3.jpg" alt="">
+            <p class="descripcion"> Procesador Intel Core i3 10100 </p>
+            <p class="precio"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+            <strong class="precio"> $<span>585000</span> </strong> <br>
+            <button class="agregar_carrito" data-id="1"> Agregar al Carrito </button>
+        </div>
+        
+        <div class="ejemplo">
+            <img class="imagen" src="./img/intel_i5.jpg" alt="">
+            <p class="descripcion"> Procesador Intel Core i5 9400f </p>
+            <p class="precio"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+            <strong class="precio"> $<span>700000</span> </strong> <br>
+            <button class="agregar_carrito" data-id="2"> Agregar al Carrito </button>
+        </div>
+
+        <div class="ejemplo">
+            <img class="imagen" src="./img/intel_i7.jpg" alt="">
+            <p class="descripcion"> Procesador Intel Core i7 10700 </p>
+            <p class="precio"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+            <strong class="precio"> $<span>1600000</span> </strong> <br>
+            <button class="agregar_carrito" data-id="3"> Agregar al Carrito </button>
+        </div>
+
+        <div class="ejemplo">
+            <img class="imagen" src="./img/ryzen_5.jpg" alt="">
+            <p class="descripcion"> Procesador AMD Ryzen 5 3600x </p>
+            <p class="precio"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+            <strong class="precio"> $<span>1100000</span> </strong> <br>
+            <button class="agregar_carrito" data-id="4"> Agregar al Carrito </button>
+        </div>
+
+        <div class="ejemplo">
+            <img class="imagen" src="./img/ryzen_7.jpg" alt="">
+            <p class="descripcion"> Procesador AMD Ryzen 7 3700x </p>
+            <p class="precio"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+            <strong class="precio"> $<span>1450000</span> </strong> <br>
+            <button class="agregar_carrito" data-id="5"> Agregar al Carrito </button>
+        </div>
+
+        <div class="ejemplo">
+            <img class="imagen" src="./img/ryzen_9.jpg" alt="">
+            <p class="descripcion"> Procesador AMD Ryzen 9 3900x </p>
+            <p class="precio"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+            <strong class="precio"> $<span>2500000</span> </strong> <br>
+            <button class="agregar_carrito" data-id="6"> Agregar al Carrito </button>
+        </div>
+    </div>
+
+    <!-- <script src="./js/carrito.js"></script>
+
+    <script src="./js/app.js"></script> -->
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
